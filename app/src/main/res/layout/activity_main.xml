@@ -11,12 +11,14 @@
         android:name="com.example.fragment_m.FirstFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_first"/>
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/second_frg"
-        android:name="com.example.fragment_m.SecondFragment"
+        android:id="@+id/count_frg"
+        android:name="com.example.fragment_m.countFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="2" />
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_count" />
 </LinearLayout>

@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.bundleOf
+import androidx.fragment.app.setFragmentResult
 import com.example.fragment_m.databinding.FragmentFirstBinding
 import com.google.android.material.snackbar.Snackbar
 import kotlin.random.Random
@@ -27,10 +29,15 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         savedInstanceState: Bundle?
     ): View? {
         b = FragmentFirstBinding.inflate(inflater, container, false)
+        val Vista= binding.root
+        return Vista
+    }
 
-        binding.btnGo.setOnClickListener { clickOnDado(binding.btnGo) }
-
-        return binding.root
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.btnGo.setOnClickListener {
+            clickOnDado(binding.btnGo)
+        }
     }
 
     fun clickOnDado(view: View){
@@ -39,5 +46,6 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         binding.imvDado1.setImageResource(dados[d1-1])
         binding.imvDado2.setImageResource(dados[d2-1])
         binding.tvResoult.text = (d1 + d2).toString()
+        setFragmentResult("Paquete1", bundleOf("PrimerDato" to binding.tvResoult.text))
     }
 }

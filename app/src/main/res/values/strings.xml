@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Fragment_M</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">0</string>
     <string name="resoult">Resultado</string>
     <string name="btngo">Go!</string>
     <string name="titulo">Lista de la Compra</string>
