@@ -46,6 +46,6 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         binding.imvDado1.setImageResource(dados[d1-1])
         binding.imvDado2.setImageResource(dados[d2-1])
         binding.tvResoult.text = (d1 + d2).toString()
-        setFragmentResult("Paquete1", bundleOf("PrimerDato" to binding.tvResoult.text))
+        setFragmentResult("Paquete1", bundleOf("PrimerDato" to binding.tvResoult.text.toString()))
     }
 }

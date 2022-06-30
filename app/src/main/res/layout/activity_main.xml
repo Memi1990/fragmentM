@@ -19,6 +19,6 @@
         android:name="com.example.fragment_m.countFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="2"
         tools:layout="@layout/fragment_count" />
 </LinearLayout>

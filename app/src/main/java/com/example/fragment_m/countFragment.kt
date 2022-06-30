@@ -15,7 +15,7 @@ class countFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setFragmentResultListener("Paquete1"){ paquete, datos ->
-            b.tvCount.text = datos.getString("primerDato")
+            b.tvCount.text = datos.getString("PrimerDato")
         }
 
     }

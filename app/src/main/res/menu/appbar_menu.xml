@@ -7,4 +7,9 @@
         android:icon="@drawable/ic_action_shop"
         android:orderInCategory="100"
         android:id="@+id/icShop"/>
+    <item android:title="back"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_return"
+        android:orderInCategory="100"
+        android:id="@+id/icBack"/>
 </menu>
